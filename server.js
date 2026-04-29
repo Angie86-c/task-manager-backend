@@ -7,9 +7,8 @@ dotenv.config();
 const { connectDB } = require('./src/config/db');
 
 const app = express();
-
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://frabjous-profiterole-463cab.netlify.app',
   credentials: true,
 }));
 app.use(express.json());
